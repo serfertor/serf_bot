@@ -82,14 +82,13 @@ def textMessage(bot, update):
         c = int (b, 2)
         print (c)
         d =  (c)
-        print (d)'''
- 
+        print (d)
     else:
         res = 'Получил ваше сообщение: '+ update.message.text
         bot.send_message(chat_id = update.message.chat_id, text = res)
 
 def helpp (bot,update):
-    bot.send_message (chat_id = update.message.chat_id, text = "/start - начало работы; \n команды - сообщения : \n Triangle - cуществует ли треугольник с такими сторонами \n делители - все делители данного числа \n реши - решение квадратных уравнений" \n закодируй - переводит текст в двоичный код \n декодируй - расшифровывает двоичный код в текст \n делители - выводит делители для целого числа)
+    bot.send_message (chat_id = update.message.chat_id, text = "/start - начало работы; \n команды - сообщения : \n Triangle - cуществует ли треугольник с такими сторонами \n делители - все делители данного числа \n реши - решение квадратных уравнений \n закодируй - переводит текст в двоичный код \n декодируй - расшифровывает двоичный код в текст \n делители - выводит делители для целого числа")
 
 helpp_handler = CommandHandler('help', helpp)     
 start_handler = CommandHandler('start', startCommand)
