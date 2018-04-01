@@ -1,1 +1,1 @@
-web: python bot_school.py
+web: python botScript.py
